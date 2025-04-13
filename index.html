@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Web Design Mastery | Rohan</title>
+</head>
+
+<body>
+  <!------------------- my nav bar section ---------------------------------->
+  <nav>
+    <div class="nav__bar">
+      <a href="#"><span class="logo nav__logo">R</span>Rohan singh</a>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-3-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#service">Service</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact" class="btn">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn__large">Contact</a>
+  </nav>
+
+  <!------------------- my main section ---------------------------------->
+  <header class="section__container header__container" id="home">
+    <div class="header__image">
+      <img src="assets/rohan3.jpg" alt="header" />
+    </div>
+    <div class="header__content">
+      <div>
+        <h1>Hey I,M <br />Rohan,<br />Full Stack Web Developer</h1>
+      </div>
+      <p class="section__description">
+        A creative and driven full-stack web developer, enjoys the challenge of bringing complex ideas to life
+        through clean and efficient code. I am passionate about continuous learning and delivering impactful digital
+        products.
+      </p>
+      <div class="header__btn">
+        <button class="btn">Hire Me Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!------------------- my about section ---------------------------------->
+  <section class="section__container about__container" id="about">
+    <div class="about__image">
+      <img src="assets/bg.png" alt="bg" class="about__bg-1" />
+      <img src="assets/bg.png" alt="bg" class="about__bg-2" />
+      <img src="assets/rohan2.jpg" alt="about" class="about__img" />
+    </div>
+    <div class="about__content">
+      <h2 class="section__header"> About Me</h2>
+      <p class="section__description">
+        As a full-stack web developer, I, Rohan Singh, am skilled in both front-end and back-end development. I am
+        experienced in building dynamic and responsive websites and applications using modern technologies. My goal is
+        to create efficient, user-centric solutions that meet and exceed expectations.
+      </p>
+
+      <div class="section section-content">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+          <h4>[10th] form [St.Thomas School]</h4>
+          <h4>[12th] from [The Randiant International School]</h4>
+          <h4>[B.Tech] in [Computer Science and Engineering]</h4>
+          <p>[Kashi Institude of Technology / AKTU], [ Varanasi ]</p>
+          <p>[ 2025 - 2026 ]</p>
+        </div>
+      </div>
+
+      <div class="about__btn">
+        <a href="assets/Rohan singh resume.pdf" download><button class="btn">Download Resume</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!------------------- my skills section ---------------------------------->
+  <section id="skills">
+    <!----------------- progress bar functionltiy ------------------------->
+    <div class="container">
+      <h1 class="main-title">My Skills</h1>
+      <div class="skills-grid">
+
+        <div class="skill-item">
+          <h2 class="skill-title">Full Stack Web Development</h2>
+          <div class="skill-bar">
+            <div class="skill-bar-progress" data-skill="90">
+              <span class="progress-text">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <h2 class="skill-title">Backend Development</h2>
+          <div class="skill-bar">
+            <div class="skill-bar-progress" data-skill="85">
+              <span class="progress-text">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <h2 class="skill-title">Data Analysis & Science</h2>
+          <div class="skill-bar">
+            <div class="skill-bar-progress" data-skill="75">
+              <span class="progress-text">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <h2 class="skill-title">Mobile App Development</h2>
+          <div class="skill-bar">
+            <div class="skill-bar-progress" data-skill="80">
+              <span class="progress-text">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <h2 class="skill-title">UI/UX Design</h2>
+          <div class="skill-bar">
+            <div class="skill-bar-progress" data-skill="60">
+              <span class="progress-text">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <h2 class="skill-title">Database Management</h2>
+          <div class="skill-bar">
+            <div class="skill-bar-progress" data-skill="70">
+              <span class="progress-text">0%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!------------------- detaile table  ----------------------------------->
+    <div id="detailed_skills_discribe">
+
+      <h2 class="main-title" style="font-size: 1.5rem; margin-bottom: 1rem;">Detailed Skills</h2>
+      <table class="skills-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Frontend Development</td>
+            <td>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3 (including Flexbox, Grid)</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Sass (CSS Preprocessors)</li>
+                <li>Responsive Design</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Backend Development</td>
+            <td>
+              <ul>
+                <li>Node.js (with Express.js)</li>
+                <li>RESTful APIs</li>
+                <li>Authentication & Authorization</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Databases</td>
+            <td>
+              <ul>
+                <li>SQL (MySQL)</li>
+                <li>NoSQL (MongoDB)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>DevOps & Tools</td>
+            <td>
+              <ul>
+                <li>Git & GitHub/GitLab</li>
+                <li>Docker</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+    <!--------------------------------- portfolio banner --------------------------->
+    <div class="portfolio__banner">
+      <div class="portfolio__banner__card">
+        <span><i class="ri-macbook-line"></i></span>
+        <h4>50+ Projects</h4>
+        <p>Delivered</p>
+      </div>
+
+      <div class="portfolio__banner__card">
+        <span><i class="ri-discuss-line"></i></span>
+        <h4>100+ Happy</h4>
+        <p>Customers</p>
+      </div>
+
+      <div class="portfolio__banner__card">
+        <span><i class="ri-heart-fill"></i></span>
+        <h4>27+ Lovely</h4>
+        <p>Feedbacks</p>
+      </div>
+
+      <div class="portfolio__banner__card">
+        <span><i class="ri-time-line"></i></i></span>
+        <h4>24*7 </h4>
+        <p>Call Support</p>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!------------------- my services section ---------------------------------->
+  <section class="section__container service__container" id="service">
+    <h2 class="section__header">My Best Services</h2>
+    <div class="service__grid">
+      <div class="service__card">
+        <span><i class="ri-window-fill"></i></span>
+        <h4>Website Design</h4>
+        <p>
+          We craft user-friendly interfaces that engage visitors and help you
+          achieve your online goals with minimum efforts.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-store-line"></i></span>
+        <h4>E-commerce Solutions</h4>
+        <p>
+          We build secure, scalable, and user-centric online stores that
+          enhance the shopping experience and drive conversions.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-smartphone-line"></i></span>
+        <h4>Mobile Development</h4>
+        <p>
+          From iOS to Android, we create apps that deliver seamless
+          performance and keep users coming back for more.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-share-fill"></i></span>
+        <h4>Website Maintenance & Support</h4>
+        <p>
+          A website needs ongoing care to stay secure, fast, and effective. Regular maintenance and support are key to
+          protecting your investment and ensuring long-term success online.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-seo-line"></i></span>
+        <h4>SEO</h4>
+        <p>
+          Our SEO strategies are tailored to your specific goals, helping you
+          reach your target audience and grow your online presence.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-share-circle-line"></i></span>
+        <h4>Digital Marketing</h4>
+        <p>
+          From pay-per-click (PPC) advertising to social media marketing, we
+          ensure your brand stands out in the crowded digital landscape.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!------------------- my portfolio section ---------------------------------->
+  <section class="section__container portfolio__container" id="portfolio">
+    <h2 class="section__header">My Portfolio</h2>
+    <p class="section__description">
+      Explore a showcase of my diverse projects, demonstrating my skills in
+      web development, design, and beyond. Each project reflects my passion
+      for creating impactful and innovative digital experiences.
+    </p>
+    <div class="portfolio__grid">
+      <div class="portfolio__card">
+        <img src="assets/project-1.jpg" alt="portfolio" />
+      </div>
+      <div class="portfolio__card">
+        <img src="assets/project-2.jpg" alt="portfolio" />
+      </div>
+      <div class="portfolio__card">
+        <img src="assets/project-3.jpg" alt="portfolio" />
+      </div>
+      <div class="portfolio__card">
+        <img src="assets/project-4.jpg" alt="portfolio" />
+      </div>
+      <div class="portfolio__card">
+        <img src="assets/project-5.jpg" alt="portfolio" />
+      </div>
+      <div class="portfolio__card">
+        <img src="assets/project-6.jpg" alt="portfolio" />
+      </div>
+    </div>
+
+    <div class="show_btn">
+      <a href="#" class="btn">show more..</a>
+    </div>
+  </section>
+
+  <!------------------- my contact section ---------------------------------->
+  <section class="section__container contact__container" id="contact">
+    <div class="logo">R</div>
+    <h2 class="section__header">Let's Talk With Me!</h2>
+    <p class="section__description">
+      An open invitation to connect, and exploring collaborative opportunities
+      on my personal portfolio website.
+    </p>
+<!--------------------- link section of social media  -------------------------->
+    <div class="contact__socials">
+      <a href="https://github.com/rohan-singh9336?tab=repositories"><i class="ri-github-fill"></i></a>
+      <a href="https://www.linkedin.com/in/rohan-singh-1a1427321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="ri-linkedin-fill"></i></a>
+      <a href="#"><i class="ri-instagram-line"></i></a>
+      <a href="#"><i class="ri-facebook-fill"></i></a>
+      <a href="https://www.pinterest.com/rohansin2001/"><i class="ri-pinterest-line"></i></a>
+    </div>
+<!--------------------- contact section   -------------------------->
+    <div class="contact-form-container">
+      <h2>Get in Touch!</h2>
+      <p class="subtitle">Have a question or want to work together?</p>
+
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="5ff8a58f-6cf1-423e-97e8-d6b5397ec1e9">
+          <div class="form-group">
+              <input type="text" id="name" name="name" required placeholder=" ">
+              <label for="name">Your Name</label>
+              <span class="focus-border"></span>
+          </div>
+
+          <div class="form-group">
+              <input type="email" id="email" name="email" required placeholder=" ">
+               <label for="email">Your Email</label>
+               <span class="focus-border"></span>
+          </div>
+
+          <div class="form-group">
+              <input type="tel" id="phone" name="phone" placeholder=" ">
+              <label for="phone">Phone (Optional)</label>
+              <span class="focus-border"></span>
+          </div>
+
+          <div class="form-group">
+              <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+              <label for="message">Your Message</label>
+              <span class="focus-border"></span>
+          </div>
+
+          <button type="submit" class="submit-btn">
+              Send Message <span class="arrow">&rarr;</span>
+          </button>
+
+          <div id="form-status"></div>
+      </form>
+  </div>
+  </section>
+
+  <!------------------- my footer section ---------------------------------->
+  <footer class="footer">
+    Copyright © 2025 Web Designer Rohan singh. All rights reserved.
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
