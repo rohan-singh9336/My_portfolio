@@ -2,6 +2,26 @@ const navLinks = document.getElementById("nav-links");
 const menuBtn = document.getElementById("menu-btn");
 const menuBtnIcon = menuBtn.querySelector("i");
 
+// -----------preloader animation js-------------------------------------
+
+
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  
+  // Wait until animation is complete (2s) then fade out
+  setTimeout(() => {
+    preloader.classList.add('fade-out');
+    setTimeout(() => {
+      preloader.style.display = 'none';
+    }, 700); // match CSS transition
+  }, 2000); // delay to finish animation
+});
+
+
+
+// ---------------------------main section code js----------------------
+
+
 menuBtn.addEventListener("click", (e) => {
   navLinks.classList.toggle("open");
 
@@ -188,7 +208,4 @@ async function handleSubmit(event) {
   }
 }
 
-// --- Make sure the rest of your original script is still here: ---
-// (The part that starts with window.addEventListener('DOMContentLoaded'...)
-// (The part that gets the form and adds the event listener: form.addEventListener('submit', handleSubmit);)
-// (The part that adds the slideInFromLeft animation keyframes and applies it)
+
